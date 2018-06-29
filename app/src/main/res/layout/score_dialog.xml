@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bao="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    
+    android:orientation="vertical" >
+
+    <com.zc.pickuplearn.ui.view.RatingBarView
+        android:id="@+id/sv_star"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        bao:starCount="5"
+        bao:starEmpty="@mipmap/ic_star_empty"
+        bao:starFill="@mipmap/ic_star_fill"
+        bao:starImageSize="35dp" >
+    </com.zc.pickuplearn.ui.view.RatingBarView>
+
+</RelativeLayout>

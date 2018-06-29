@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/LRecyclerview_library/LRecyclerview_library.iml" filepath="$PROJECT_DIR$/LRecyclerview_library/LRecyclerview_library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SankiKnows.iml" filepath="$PROJECT_DIR$/SankiKnows.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dofile/dofile.iml" filepath="$PROJECT_DIR$/dofile/dofile.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flowtaglibrary/flowtaglibrary.iml" filepath="$PROJECT_DIR$/flowtaglibrary/flowtaglibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/indicator/indicator.iml" filepath="$PROJECT_DIR$/indicator/indicator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pager-bottom-tab/pager-bottom-tab.iml" filepath="$PROJECT_DIR$/pager-bottom-tab/pager-bottom-tab.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pager-bottom-tab-strip/pager-bottom-tab-strip.iml" filepath="$PROJECT_DIR$/pager-bottom-tab-strip/pager-bottom-tab-strip.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xframe/xframe.iml" filepath="$PROJECT_DIR$/xframe/xframe.iml" />
+    </modules>
+  </component>
+</project>

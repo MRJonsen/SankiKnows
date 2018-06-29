@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_page_bg_grad"
+    android:orientation="vertical"
+    tools:context="com.zc.pickuplearn.ui.group.widget.prodetail.view.ProfessorDetailActivity">
+
+    <include layout="@layout/common_tool_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/rl_head"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/transparent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="@dimen/fragment_my_icon"
+                    android:layout_height="@dimen/fragment_my_icon"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/default_padding_left">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/civ_icon"
+                        android:layout_width="@dimen/fragment_my_icon"
+                        android:layout_height="@dimen/fragment_my_icon"
+                        android:layout_centerInParent="true"
+                        android:src="@mipmap/default_user_circle_icon"
+                        app:civ_border_color="@color/white_60"
+                        app:civ_border_overlay="true"
+                        app:civ_border_width="5dp" />
+
+                    <ImageView
+                        android:id="@+id/iv_sex"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@mipmap/sex_boy" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_padding_left"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/tv_professor_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="@dimen/margin_7dp"
+                        android:text="张晓明"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp_18"
+                        android:textStyle="bold"
+                        android:typeface="monospace" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/iv_grade"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="@dimen/default_margin"
+                            android:src="@mipmap/icon_expert_grade" />
+
+                        <TextView
+                            android:id="@+id/tv_expert_score"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:maxLines="1"
+                            android:text="5.0"
+                            android:textColor="@color/text_color_gold"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin_middle"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/tv_expert_grade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp_14"
+                        android:textStyle="bold"
+                        android:typeface="monospace" />
+
+                    <TextView
+                        android:id="@+id/tv_expert_online_status"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/default_margin"
+                        android:textColor="@color/hintColor"
+                        android:textSize="10sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@color/divider_color" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/default_margin_middle"
+                    android:layout_marginLeft="@dimen/default_margin"
+                    android:layout_marginRight="@dimen/default_margin"
+                    android:layout_marginTop="@dimen/default_margin_middle"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="所属专业:"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_18" />
+
+                    <TextView
+                        android:id="@+id/tv_professional"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/text_color_gray"
+                        android:textSize="@dimen/sp_14" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_divider"
+                    android:background="@color/divider_color" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/default_margin_middle"
+                    android:layout_marginLeft="@dimen/default_margin"
+                    android:layout_marginRight="@dimen/default_margin"
+                    android:layout_marginTop="@dimen/default_margin_middle"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="擅长领域:"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_18" />
+
+                    <TextView
+                        android:id="@+id/tv_good_field"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/text_color_gray"
+                        android:textSize="@dimen/sp_14" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_divider"
+                    android:background="@color/divider_color" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/default_margin_middle"
+                    android:layout_marginLeft="@dimen/default_margin"
+                    android:layout_marginRight="@dimen/default_margin"
+                    android:layout_marginTop="@dimen/default_margin_middle"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="描述:"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_18" />
+
+                    <TextView
+                        android:id="@+id/tv_professor_introduce"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/text_color_gray"
+                        android:textSize="@dimen/sp_14" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_professor_history"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/ll_professor_online"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/space_divider"
+            android:layout_marginTop="@dimen/space_divider"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="专家在线解答"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_18" />
+        </LinearLayout>
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/space_divider"
+            android:layout_marginTop="@dimen/space_divider"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="专家历史解答"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_18" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

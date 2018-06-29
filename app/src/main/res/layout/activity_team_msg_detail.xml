@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_team_msg_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.zc.pickuplearn.ui.teamcircle.view.TeamMsgDetailActivity">
+
+    <com.zc.pickuplearn.ui.view.HeadView
+        android:id="@+id/hv_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="通知:"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/album_sp_16" />
+
+                    <EditText
+                        android:id="@+id/et_msg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:enabled="false"
+                        android:gravity="top"
+                        android:inputType="textMultiLine"
+                        android:minHeight="50dp"
+                        android:padding="4dp"
+                        android:scrollbars="vertical"
+                        android:textColor="@color/black"
+                        android:textColorHint="#898989"
+                        android:textSize="@dimen/text_size_14" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@drawable/not_true_line"
+                    android:layerType="software" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="补充说明:"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/album_sp_16" />
+
+                    <EditText
+                        android:id="@+id/et_mark"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:enabled="false"
+                        android:gravity="top"
+                        android:inputType="textMultiLine"
+                        android:minHeight="50dp"
+                        android:padding="4dp"
+                        android:scrollbars="vertical"
+                        android:textColor="@color/black"
+                        android:textColorHint="#898989"
+                        android:textSize="@dimen/text_size_14" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@drawable/not_true_line"
+                    android:layerType="software" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="发布人:"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/sp_14" />
+
+                    <TextView
+                        android:id="@+id/tv_pusher"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/sp_14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="发布时间:"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/sp_14" />
+
+                    <TextView
+                        android:id="@+id/tv_push_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/sp_14" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:padding="@dimen/margin_7dp">
+
+                    <com.zc.pickuplearn.ui.view.SHsegmentControl.SegmentControl
+                        android:id="@+id/segment_control"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:textSize="13sp"
+                        app:boundWidth="1dp"
+                        app:cornerRadius="3dip"
+                        app:horizonGap="15dip"
+                        app:normalColor="@android:color/white"
+                        app:selectedColor="@color/colorPrimary"
+                        app:texts="未回执|已回执"
+                        app:verticalGap="8dip" />
+                </LinearLayout>
+
+                <com.zc.pickuplearn.ui.view.FullViewPager
+                    android:id="@+id/vp_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

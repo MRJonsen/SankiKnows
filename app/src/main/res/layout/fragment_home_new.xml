@@ -1,0 +1,176 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.zc.pickuplearn.ui.home_new.view.HomeNewFragment">
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/main_page_bg_grad">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="5dp"
+            android:paddingLeft="@dimen/default_padding_left"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="知道问答"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/ib_edit_search"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@mipmap/yy_nav_search" />
+
+            <ImageButton
+                android:id="@+id/ib_edit_type"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="12dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@mipmap/classification" />
+
+            <ImageButton
+                android:id="@+id/ib_edit_ask"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="12dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@mipmap/yy_nav_why" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:visibility="gone"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/ib_classification"
+            android:layout_gravity="center_vertical"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dip"
+            android:background="@android:color/transparent"
+            android:src="@mipmap/classification"
+             />
+
+        <com.zc.pickuplearn.ui.view.ClearEditText
+            android:id="@+id/et_search"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="10dip"
+            android:layout_weight="0.89"
+            android:background="@drawable/home_search_border"
+            android:drawableLeft="@mipmap/home_search_icon"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:hint="@string/search_warning"
+            android:textColorHint="@color/hintColor"
+            android:paddingLeft="15dp"
+            android:singleLine="true"
+            android:inputType="text"
+            android:imeOptions="actionSearch"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/bt_search"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/log_reg_bt_selector"
+            android:text="@string/search"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+        <RelativeLayout
+            android:id="@+id/rl_mine_new_msg"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/ib_mine_new_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:src="@mipmap/mine_warning"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tv_mine_new_msg_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circle"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="end"
+                android:text=""
+                android:visibility="invisible"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_12" />
+        </RelativeLayout>
+    </LinearLayout>
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tl_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tab_layout_height"
+        app:tabMode="fixed"
+        app:tabGravity="fill"
+        android:background="@color/white"
+        app:tabIndicatorColor="@color/bt_un_press"
+        app:tabSelectedTextColor="@color/bt_un_press"
+        app:tabTextColor="@color/color_tab_unselected">
+
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_home_content"
+        android:background="@color/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

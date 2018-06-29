@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_pulearn_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zc.pickuplearn.ui.main_pick_up_learn.PULearnMainActivity">
+
+    <com.zc.pickuplearn.ui.view.NoScrollViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!--底部导航栏分割线-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height_middle"
+        android:background="@color/background" />
+    <me.majiajie.pagerbottomtabstrip.PageNavigationView
+        android:id="@+id/bottom_tab"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/white" />
+    <!--<FrameLayout-->
+        <!--android:id="@+id/fl_content"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="1" />-->
+    <!--底部导航栏分割线-->
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/divider_height_middle"-->
+        <!--android:background="@color/background" />-->
+    <!--&lt;!&ndash;底部导航栏&ndash;&gt;-->
+    <!--<me.majiajie.pagerbottomtabstrip.PagerBottomTabLayout-->
+        <!--android:id="@+id/tab"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:elevation="8dp" />-->
+</LinearLayout>

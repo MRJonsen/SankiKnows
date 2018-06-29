@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.zc.pickuplearn">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- JMessage Demo required for record audio -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <application
+        android:name=".application.MyAppliction"
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:label">
+        <activity
+            android:name=".ui.main.widget.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.login.view.LoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.welcome.view.SplashActivity"
+            android:theme="@style/StartAppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.classiccase.view.ClassicCaseListActivity" />
+        <activity android:name=".ui.classiccase.view.ClassicCaseDetailActivity" />
+        <activity android:name=".ui.group.widget.prodetail.view.ProCircleDetailActivity" />
+        <activity android:name=".ui.mine.mine.widget.MyCircleActivity" />
+        <activity android:name=".ui.mine.setting.view.SettingActivity" />
+        <activity android:name=".ui.dynamic.widget.theMoreDynamic.view.DynamicMoreActivity" />
+        <activity android:name=".ui.mine.changenickname.view.ChangeNickNameActivity" />
+        <activity android:name=".ui.suggestion.view.SuggestionActivity" />
+        <activity android:name=".ui.mine.changepsw.ChangePswActivity" />
+        <activity
+            android:name=".ui.mine.changepsw.ChangePswPopActivity"
+            android:theme="@style/MyDialogStyle" />
+        <activity android:name=".ui.mine.mine.widget.MyAnswerActivity" />
+        <activity android:name=".ui.mine.mine.widget.MyQuestionActivity" />
+        <activity android:name=".ui.mine.mine.widget.MyCollectionActivity" />
+        <activity
+            android:name=".ui.dynamic.widget.answerqustion.view.QuestionDetailActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".ui.category.QuestionClassification" />
+
+        <receiver android:name=".ui.update.ApkInstallReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+            </intent-filter>
+        </receiver>
+
+        <!-- <activity -->
+        <!-- android:name="com.yanzhenjie.album.AlbumActivity" -->
+        <!-- android:label="@string/app_name" -->
+        <!-- android:theme="@style/Theme.AppCompat.Light.NoActionBar" /> -->
+        <!-- |adjustResize -->
+        <activity
+            android:name=".ui.askquestion.view.AskQuestionActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".ui.previewphoto.PreViewImageActivity" />
+        <activity android:name=".ui.dynamic.widget.answerqustion.view.AnswerActivity" />
+        <!-- android:screenOrientation="portrait" -->
+        <activity
+            android:name=".ui.base.WebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.answerdetail.ZhuiwenZhuidaActivity" />
+        <activity
+            android:name=".ui.sign.view.SignInActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.type.view.ScrollGridActivity" />
+        <activity
+            android:name=".ui.type.view.PopScrollGridActivity"
+            android:theme="@style/MyDialogStyleBottom" />
+        <activity
+            android:name=".ui.question.ChangeQuestionActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".ui.teamcircle.view.TeamListActivity" />
+        <activity android:name=".ui.teamcircle.view.TeamCreateActivity" />
+        <activity android:name=".ui.mine.school.view.SchoolActivity" />
+        <activity android:name=".ui.teamcircle.view.GroupAddMembersActivity" />
+        <activity android:name=".ui.teamcircle.view.TeamDetailActivity" />
+        <activity android:name=".ui.teamcircle.view.TeamCreateAddMemberActivity" />
+        <activity
+            android:name=".ui.teamcircle.question.TeamAskQuestionActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".ui.teamcircle.view.TeamInfoEditActivity" />
+        <activity android:name=".ui.teamcircle.view.TeamQusQustionSearchActivity" />
+        <activity android:name=".ui.teamcircle.view.TeamAnswerQuestionActivity" />
+        <activity android:name=".ui.teamcircle.view.TeamCirCleQuestionDetailActivity" />
+        <activity android:name=".ui.teamcircle.view.TeamQuestionAndAnswerActivity" />
+        <activity android:name=".ui.teamcircle.view.AskQuestionAddTargetMemberActivity" />
+        <activity android:name=".ui.mine.mine.widget.MineAnswerActivity" />
+        <activity android:name=".ui.mine.mine.widget.AboutActivity" />
+        <activity android:name=".ui.teamcircle.view.TransferTeamActivity" />
+        <!-- Required JMessage SDK核心功能 -->
+        <!-- android:name="cn.jpush.im.android.helpers.IMReceiver" -->
+        <receiver
+            android:name=".broadcastreciver.ImReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.im.android.action.IM_RESPONSE" />
+                <action android:name="cn.jpush.im.android.action.NOTIFICATION_CLICK_PROXY" />
+
+                <category android:name="${JPUSH_PKGNAME}" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".broadcastreciver.JPushReceiver"
+            android:enabled="true">
+            <intent-filter>
+
+                <!-- <action android:name="cn.jpush.im.android.action.IM_RESPONSE" /> -->
+                <!-- <action android:name="cn.jpush.im.android.action.NOTIFICATION_CLICK_PROXY" /> -->
+                <!-- Required 用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <!-- Required 用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <!-- Required 用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <!-- Required 用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <action android:name="cn.jpush.android.intent.CONNECTION" />
+
+                <category android:name="${JPUSH_PKGNAME}" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".ui.im.chatting.ChatActivity"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".ui.im.chatting.activity.PickPictureTotalActivity" />
+        <activity android:name=".ui.im.chatting.activity.PickPictureActivity" />
+        <activity android:name=".ui.im.chatting.activity.BrowserViewPagerActivity" />
+        <activity android:name=".ui.group.widget.prodetail.view.ProfessorListActivity" />
+        <activity android:name=".ui.group.widget.prodetail.view.ProfessorDetailActivity" />
+        <activity android:name=".ui.group.widget.prodetail.view.ProfessorHistroyAnswerActivity" />
+        <activity android:name=".ui.group.widget.prodetail.view.ProfessTalkListActivity" />
+        <activity android:name=".ui.group.view.IndustryStandardActivity" />
+        <activity android:name=".ui.group.view.IndustryStandardSearchActivity" />
+        <activity android:name=".ui.teamcircle.view.TeamMessageManageActivity" />
+        <activity android:name=".ui.teamcircle.view.TeamSendMsgActivity" />
+        <activity android:name=".ui.teamcircle.view.TeamMsgDetailActivity" />
+        <activity android:name=".ui.msgbox.PersonalMsgActivity" />
+        <activity android:name=".ui.teamcircle.view.TeamMsgHandleActivity" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.zc.pickuplearn.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".ui.main_pick_up_learn.PULearnMainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".ui.capabilitymap.CapAbilityMapActivity" />
+        <activity android:name=".ui.main_pick_up_learn.FunctionEditActivity" />
+        <activity android:name=".ui.main_pick_up_learn.ZhidaoWenDaActivity" />
+        <activity android:name=".ui.dynamic.widget.theMoreDynamic.view.SearchActivity" />
+        <activity
+            android:name=".ui.webview.BaseWebViewActivity"
+            android:configChanges="orientation|screenSize"
+            android:hardwareAccelerated="true" />
+        <activity android:name=".ui.question_and_answer.DynamicActivity" />
+        <activity android:name=".ui.question_and_answer.QuestionDetailActivity" />
+        <activity android:name=".ui.classiccase.cases.CaseListActivity" />
+        <activity android:name=".ui.classiccase.cases.CaseHomeActivity" />
+        <activity android:name=".ui.industry.IndustryListActivity" />
+        <activity android:name=".ui.expert.ExpertListActivity" />
+        <activity android:name=".ui.industry.IndustryDetailActivity" />
+        <activity android:name=".ui.district_manager.CoursewareActivity" />
+        <activity android:name=".ui.district_manager.SkillInventoryActivity" />
+        <activity android:name=".ui.district_manager.QuestionBankActivity" />
+        <activity android:name=".ui.district_manager.SkillReportActivity" />
+        <activity android:name=".ui.district_manager.CourseCollectActivity" />
+        <activity android:name=".ui.district_manager.CourseDetailActivity" />
+        <activity android:name=".ui.district_manager.PracticeSpecificationActivity" />
+        <activity android:name=".ui.district_manager.SkillDetailActivity" />
+        <activity android:name=".ui.district_manager.CourseSearchActivity" />
+        <activity
+            android:name=".ui.webview.x5.CommonActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="singleTop" />
+        <activity android:name=".ui.videoplayer.VideoPlayerActivity" />
+        <activity android:name=".ui.district_manager.SkillMoudleLearnActivity" />
+        <activity android:name=".ui.district_manager.SkillMoudleActivity"></activity>
+    </application>
+
+</manifest>

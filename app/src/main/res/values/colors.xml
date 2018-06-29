@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--login-->
+    <color name="login_input_line">#aaaaaa</color>
+    <color name="accent">#fe5c309f</color>
+    <color name="question_order">#3A6E93</color>
+    <!--<color name="colorPrimary">#00544a</color>-->
+    <color name="colorPrimary">#28a564</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimary_deep">#dd207e65</color>
+    <color name="colorAccent">#808080</color>
+    <color name="white">#ffffff</color>
+    <color name="white_80">#44ffffff</color>
+    <color name="white_60">#77ffffff</color>
+    <color name="red">#F90858</color>
+    <color name="black">#333333</color>
+    <color name="text_color_gold">#E59C09</color>
+    <color name="text_color_black">#333333</color>
+    <color name="text_color_gray">#808080</color>
+    <color name="hint">#828282</color>
+    <!--<color name="black">#4f4f4f</color>-->
+    <color name="circle_rang">#ff6678</color>
+    <color name="profession_gray">#999999</color>
+    <color name="background">#efeff0</color>
+    <!--<color name="background">#E6E6E6</color>-->
+    <color name="gray">#808080</color>
+    <color name="rose_red">#f52c2c</color>
+    <color name="expert_off_line">#7fffffff</color>
+    <color name="expert_off_line_text">#cccccc</color>
+
+
+
+    <!--按钮按下-->
+    <color name="bt_press">#28a564</color>
+    <color name="bt_un_press">#37AF59</color>
+    <!--<color name="bt_un_press">#017063</color>-->
+    <!--<color name="bt_press">#00544a</color>-->
+    <color name="pop_show_bg">#e0b3b3b3</color>
+    <!--首页底部bar-->
+    <!--<color name="color_tab_selected">#00544a</color>-->
+    <!--<color name="color_tab_unselected">#7a7a7a</color>-->
+    <color name="color_tab_selected">#249150</color>
+    <color name="color_tab_unselected">#7a7a7a</color>
+    <color name="color_tab_background">#f4ae19</color>
+    <!--分割线颜色-->
+    <color name="divider_color">#e2e2e2</color>
+    <!--圈子-->
+    <color name="tab_layout_bg">#EEE9E9</color>
+    <!--我的模块-->
+    <color name="mine_text_color">#757676</color>
+    <!--其他-->
+    <color name="cal_divider">#FFEDEDED</color>
+    <color name="biankuang">#F0EEF9</color>
+    <color name="color_title_bg">#00544a</color>
+    <color name="label_color">#747577</color>
+    <color name="alertdialog_line">#c6c6c6</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="actionsheet_red">#FD4A2E</color>
+    <color name="actionsheet_gray">#8F8F8F</color>
+    <color name="uid_hint">#5d5d5d</color>
+    <color name="hintColor">#c4c4ca</color>
+    <color name="home_reply_text">#37AF59</color>
+    <!--日历-->
+    <color name="cal_title_background">#FFFFFFFF</color>
+    <color name="cal_title_text">#FF2D2D2D</color>
+    <color name="cal_arrow_enable">#ffc0c0c0</color>
+    <color name="cal_arrow_unable">#ffeaeaea</color>
+    <color name="cal_weekdays_background">#FFFFFFFF</color>
+    <color name="cal_weekdays_text">#FF2D2D2D</color>
+    <color name="cal_pager_background">#FFFFFFFF</color>
+    <color name="cal_signed_border">#ffb5e6f1</color>
+    <color name="cal_signed_background">#fff7fcfe</color>
+    <color name="cal_signed_day">#ff0babd1</color>
+    <color name="cal_signed_text">#ff0babd1</color>
+    <color name="cal_unsigned_day">#ff2d2d2d</color>
+    <color name="cal_unsigned_text">#ffb6b6b6</color>
+    <color name="cal_today_background">#ff0babd1</color>
+    <color name="cal_today_day">#ffffffff</color>
+    <color name="cal_today_text">#ffffffff</color>
+    <color name="cal_unreach_day">#ffb6b6b6</color>
+    <color name="cal_unreach_text">#ffb6b6b6</color>
+    <color name="score_color">#F0B964</color>
+    <color name="about_color">#4f4f4f</color>
+
+    <color name="jmui_chat_text_color">#373334</color>
+    <color name="jmui_item_click_bg_color">#dddddd</color>
+    <color name="jmui_jpush_blue">#3f80dc</color>
+    <color name="jmui_send_press_color">#346fc3</color>
+    <color name="jmui_default_cursor_color">#8db4eb</color>
+    <color name="jmui_chat_detail_split_line_color">#d4d4d4</color>
+    <color name="jmui_translucent_background">#60000000</color>
+    <color name="network_disconnected_bg_color">#ffdfe0</color>
+    <color name="conv_list_split_line_color">#d6d6d6</color>
+    <color name="level_color">#F0B964</color>
+    <color name="team_border_1">#7758B57F</color>
+    <color name="team_border_2">#77E48A2D</color>
+    <color name="team_border_3">#779857C5</color>
+    <color name="team_border_4">#77DE367C</color>
+
+
+
+</resources>

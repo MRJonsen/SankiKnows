@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_change_psw"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".ui.mine.changepsw.ChangePswActivity">
+
+    <com.zc.pickuplearn.ui.view.HeadView
+        android:id="@+id/hv_headbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@android:color/transparent">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_padding_left"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_change_psw_sure"
+            android:padding="2dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/tv_uid"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="center"
+                    android:src="@mipmap/icon_psw" />
+
+                <EditText
+                    android:id="@+id/dialog_change_pwd_oldPwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/tv_uid"
+                    android:background="@null"
+                    android:hint="请输入当前密码"
+                    android:inputType="textPassword"
+                    android:maxLength="20"
+                    android:singleLine="true"
+                    android:textColorHint="@color/hintColor"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/text_size_14">
+
+                    <requestFocus />
+                </EditText>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_change_psw_sure"
+            android:orientation="vertical"
+            android:padding="2dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/tv_psw"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="center"
+                    android:src="@mipmap/icon_psw" />
+
+                <EditText
+                    android:id="@+id/dialog_change_pwd_newPsw1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/tv_psw"
+                    android:background="@null"
+                    android:hint="请输入新密码"
+                    android:inputType="textPassword"
+                    android:maxLength="20"
+                    android:textColorHint="@color/hintColor"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/text_size_14" />
+
+                <!--<ImageView-->
+                <!--android:layout_width="20dp"-->
+                <!--android:layout_height="20dp"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:src="@mipmap/log_delet_data_icon"-->
+                <!--android:visibility="invisible" />-->
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_divider"
+                android:background="@color/background" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/tv_res_surepsw"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="center"
+                    android:src="@mipmap/icon_psw" />
+
+                <EditText
+                    android:id="@+id/dialog_change_pwd_newPsw2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/tv_res_surepsw"
+                    android:background="@null"
+                    android:hint="请确认新密码"
+                    android:inputType="textPassword"
+                    android:maxLength="20"
+                    android:textColorHint="@color/hintColor"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/text_size_14" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:background="@color/white"-->
+    <!--android:layout_height="@dimen/top_item_hight">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_uid"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_alignParentLeft="true"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:paddingLeft="14dp"-->
+    <!--android:paddingRight="16dp"-->
+    <!--android:textColor="@color/uid_hint"-->
+    <!--android:text="当前密码" />-->
+
+    <!--<EditText-->
+    <!--android:id="@+id/dialog_change_pwd_oldPwd"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_margin="3dp"-->
+    <!--android:maxLength="20"-->
+    <!--android:layout_toRightOf="@+id/tv_uid"-->
+    <!--android:background="@null"-->
+    <!--android:textColorHint="@color/hintColor"-->
+    <!--android:textSize="@dimen/text_size_14"-->
+    <!--android:hint="请输入当前密码"-->
+    <!--android:inputType="textPassword"-->
+    <!--android:singleLine="true"-->
+    <!--android:textCursorDrawable="@null">-->
+
+    <!--<requestFocus />-->
+    <!--</EditText>-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="20dp"-->
+    <!--android:layout_height="20dp"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:src="@mipmap/log_delet_data_icon"-->
+    <!--android:visibility="invisible" />-->
+
+    <!--</RelativeLayout>-->
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/space_divider"-->
+    <!--android:background="@android:color/transparent" />-->
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:background="@color/white"-->
+    <!--android:layout_height="@dimen/top_item_hight">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_psw"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_alignParentLeft="true"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:paddingLeft="14dp"-->
+    <!--android:paddingRight="30dp"-->
+    <!--android:textColor="@color/uid_hint"-->
+    <!--android:text="新密码" />-->
+
+    <!--<EditText-->
+    <!--android:id="@+id/dialog_change_pwd_newPsw1"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_margin="3dp"-->
+    <!--android:layout_toRightOf="@+id/tv_psw"-->
+    <!--android:background="@null"-->
+    <!--android:textColorHint="@color/hintColor"-->
+    <!--android:textSize="@dimen/text_size_14"-->
+    <!--android:maxLength="20"-->
+    <!--android:inputType="textPassword"-->
+    <!--android:hint="密码由6-20位字符组成"-->
+    <!--android:textCursorDrawable="@null" />-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="20dp"-->
+    <!--android:layout_height="20dp"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:src="@mipmap/log_delet_data_icon"-->
+    <!--android:visibility="invisible" />-->
+    <!--</RelativeLayout>-->
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/space_divider"-->
+    <!--android:background="@android:color/transparent" />-->
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:background="@color/white"-->
+    <!--android:layout_height="@dimen/top_item_hight">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_res_surepsw"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_alignParentLeft="true"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:paddingLeft="14dp"-->
+    <!--android:paddingRight="16dp"-->
+    <!--android:textColor="@color/uid_hint"-->
+    <!--android:text="确认密码" />-->
+
+    <!--<EditText-->
+    <!--android:id="@+id/dialog_change_pwd_newPsw2"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_margin="3dp"-->
+    <!--android:background="@null"-->
+    <!--android:textColorHint="@color/hintColor"-->
+    <!--android:textSize="@dimen/text_size_14"-->
+    <!--android:maxLength="20"-->
+    <!--android:layout_toRightOf="@+id/tv_res_surepsw"-->
+    <!--android:hint="请再次输入密码"-->
+    <!--android:inputType="textPassword"-->
+    <!--android:textCursorDrawable="@null" />-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="20dp"-->
+    <!--android:layout_height="20dp"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:src="@mipmap/log_delet_data_icon"-->
+    <!--android:visibility="invisible" />-->
+    <!--</RelativeLayout>-->
+
+    <Button
+        android:id="@+id/dialog_change_pwd_ok"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/log_reg_bt_selector"
+        android:text="确 认"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_16" />
+    <!--     <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingLeft="8dip"
+            android:paddingRight="8dip"
+            android:paddingTop="5dip" >
+
+            <TextView
+                style="@style/register_text"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="旧密码:" />
+
+            <EditText
+                android:id="@+id/dialog_change_pwd_oldPwd"
+                style="@style/input_edit_text"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20.0dip"
+                android:hint="旧密码"
+                android:inputType="textPassword"
+                android:paddingLeft="5dip" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.0dip"
+            android:background="@color/biankuang" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingLeft="8dip"
+            android:paddingRight="8dip"
+            android:paddingTop="5dip" >
+
+            <TextView
+                style="@style/register_text"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="新密码:" />
+
+            <EditText
+                android:id="@+id/dialog_change_pwd_newPsw1"
+                style="@style/input_edit_text"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20.0dip"
+                android:hint="新密码"
+                android:inputType="textPassword"
+                android:paddingLeft="5dip" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.0dip"
+            android:background="@color/biankuang" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingLeft="8dip"
+            android:paddingRight="8dip"
+            android:paddingTop="5dip" >
+
+            <TextView
+                style="@style/register_text"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="确认密码:" />
+
+            <EditText
+                android:id="@+id/dialog_change_pwd_newPsw2"
+                style="@style/input_edit_text"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20.0dip"
+                android:hint="确认新密码"
+                android:inputType="textPassword"
+                android:paddingLeft="5dip" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.0dip"
+            android:background="@color/biankuang" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/dialog_change_pwd_cancel"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/input_text_border"
+                    android:text="取消" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/dialog_change_pwd_ok"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/input_text_border"
+                    android:text="确定" />
+            </LinearLayout>
+        </LinearLayout> -->
+</LinearLayout>

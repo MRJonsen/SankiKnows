@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_page_bg_grad"
+    android:orientation="vertical"
+    tools:context="com.zc.pickuplearn.ui.district_manager.SkillReportActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bar_default_height"
+        android:background="@color/transparent"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/iv_left"
+            android:layout_width="@dimen/bar_default_height"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:foreground="?attr/selectableItemBackground"
+            android:src="@mipmap/back" />
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLength="7"
+            android:text="@string/test"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/bar_default_height"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/ll_bt_right"
+                android:background="@color/transparent"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_width="48dp"
+                android:gravity="center"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/bt_right"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@color/transparent"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:src="@mipmap/icon_star"
+                    android:textColor="@color/white"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/background"
+        android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_cover"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="fitXY" />
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@mipmap/icon_play"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+    </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/background" />
+
+        <!--<com.flyco.tablayout.SlidingTabLayout-->
+        <!--android:id="@+id/tl_3"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:background="@color/white"-->
+        <!--tl:tl_indicator_color="@color/colorPrimary"-->
+        <!--tl:tl_indicator_height="1.5dp"-->
+        <!--tl:tl_indicator_margin_left="5dp"-->
+        <!--tl:tl_indicator_margin_right="5dp"-->
+        <!--tl:tl_indicator_width="40dp"-->
+        <!--tl:tl_textAllCaps="true"-->
+        <!--tl:tl_textBold="NONE"-->
+        <!--tl:tl_textSelectColor="@color/colorPrimary"-->
+        <!--tl:tl_textUnselectColor="@color/text_color_gray"-->
+        <!--tl:tl_textsize="14sp" />-->
+        <com.flyco.tablayout.SlidingTabLayout
+            android:id="@+id/tl_3"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            tl:tl_divider_color="#1A000000"
+            tl:tl_divider_padding="13dp"
+            tl:tl_indicator_color="@color/bt_un_press"
+            tl:tl_indicator_height="1.5dp"
+            tl:tl_indicator_margin_left="@dimen/default_margin"
+            tl:tl_indicator_margin_right="@dimen/default_margin"
+            tl:tl_tab_padding="22dp"
+            tl:tl_tab_space_equal="true"
+            tl:tl_textBold="BOTH"
+            tl:tl_textSelectColor="@color/bt_un_press"
+            tl:tl_textUnselectColor="@color/color_tab_unselected"
+            tl:tl_underline_color="#1A000000"
+            tl:tl_underline_height="1dp" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_divider"
+        android:background="@color/divider_color" />
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_collection"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@mipmap/icon_collection" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的收藏"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_12" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_question_bank"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_middle_icon"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@mipmap/icon_question_bank" />
+
+            <TextView
+                android:id="@+id/tv_middle_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="题库练习"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_12" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_discuss"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@mipmap/icon_discuss" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="学习讨论区"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_12" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

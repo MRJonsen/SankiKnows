@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/default_margin">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/default_margin_middle">
+
+                <TextView
+                    android:id="@+id/tv_course_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/text_size_normal" />
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                <TextView
+                    android:text="学习进度："
+                    android:textSize="@dimen/sp_12"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/text_color_gray"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_progress"
+                    android:text="0%"
+                    android:textSize="@dimen/sp_12"
+                    android:textColor="@color/text_color_gray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@+id/iv_collect"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_star"
+                    android:visibility="invisible" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/default_margin_middle"
+                android:layout_marginTop="@dimen/default_margin_middle"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="12dp"
+                        android:layout_marginRight="3dp"
+                        android:src="@mipmap/icon_tag" />
+                    <TextView
+                        android:id="@+id/tv_type"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/text_color_gray"
+                        android:textSize="@dimen/text_size_small" />
+                </LinearLayout>
+                <!--android:textColor="@color/question_order"-->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/default_margin_middle"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_content_len"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_color_gray"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="@dimen/default_margin_middle">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/icon_eye" />
+
+                        <TextView
+                            android:id="@+id/tv_click_times"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@color/text_color_gray"
+                            android:textSize="@dimen/text_size_small" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/icon_commend" />
+
+                        <TextView
+                            android:id="@+id/tv_comment_times"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@color/text_color_gray"
+                            android:textSize="@dimen/text_size_small" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_divider"
+        android:layout_marginLeft="@dimen/default_margin"
+        android:layout_marginRight="@dimen/default_margin"
+        android:background="@color/background" />
+
+    <TextView
+        android:id="@+id/tv_function"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="#e5ebef"
+        android:gravity="center"
+        android:padding="2dp"
+        android:text="立即查看"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/sp_12"
+        android:visibility="gone" />
+</LinearLayout>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_team_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.zc.pickuplearn.ui.teamcircle.view.TeamDetailActivity">
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/main_page_bg_grad">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="5dp"
+            android:paddingLeft="@dimen/default_padding_left"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/back" />
+
+        <!--<View-->
+        <!--android:id="@+id/view_temp"-->
+        <!--android:layout_width="1dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_marginBottom="8dp"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:layout_toRightOf="@id/iv_back"-->
+        <!--android:background="@color/colorPrimary" />-->
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:ellipsize="end"
+            android:maxLength="6"
+            android:maxLines="1"
+            android:text="市区二站"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/ib_edit_team"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@mipmap/yy_nav_people" />
+
+            <ImageButton
+                android:id="@+id/ib_edit_search"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="12dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@mipmap/yy_nav_search" />
+
+            <ImageButton
+                android:id="@+id/ib_edit_ask"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="12dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@mipmap/yy_nav_why" />
+
+            <ImageButton
+                android:id="@+id/ib_communication"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="12dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@mipmap/icon_communication"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapsing_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fitsSystemWindows="true"
+                app:expandedTitleMarginEnd="64dp"
+                app:expandedTitleMarginStart="48dp"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/background"
+                    android:orientation="horizontal">
+
+                    <com.zc.pickuplearn.ui.view.MyRadioButton
+                        android:id="@+id/wenyiwen"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="1dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="问一问"
+                        android:textColor="@drawable/button_text"
+                        android:textSize="@dimen/text_size_13"
+                        app:rbDrawableTop="@drawable/selector_wenyiwen"
+                        app:rbDrawableTopSize="60dp" />
+
+                    <com.zc.pickuplearn.ui.view.MyRadioButton
+                        android:id="@+id/lianyilian"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="练一练"
+                        android:textColor="@drawable/button_text"
+                        android:textSize="@dimen/text_size_13"
+                        app:rbDrawableTop="@drawable/selector_lianyilian"
+                        app:rbDrawableTopSize="60dp" />
+
+                    <com.zc.pickuplearn.ui.view.MyRadioButton
+                        android:id="@+id/biyibi"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="比一比"
+                        android:textColor="@drawable/button_text"
+                        android:textSize="@dimen/text_size_13"
+                        app:rbDrawableTop="@drawable/selector_biyibi"
+                        app:rbDrawableTopSize="60dp" />
+
+                    <com.zc.pickuplearn.ui.view.MyRadioButton
+                        android:id="@+id/liaoyiliao"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="聊一聊"
+                        android:textColor="#b3666666"
+                        android:textSize="@dimen/text_size_13"
+                        app:rbDrawableTop="@drawable/selector_liaoyiliao"
+                        app:rbDrawableTopSize="60dp" />
+                </LinearLayout>
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_collapseMode="pin"
+                    app:title="Toolbar" />
+            </android.support.design.widget.CollapsingToolbarLayout>
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <FrameLayout
+                android:id="@+id/fl_team_detail_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        </android.support.v4.widget.NestedScrollView>
+    </android.support.design.widget.CoordinatorLayout>
+</LinearLayout>

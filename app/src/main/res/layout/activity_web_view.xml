@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_page_bg_grad"
+    android:orientation="vertical">
+
+    <com.zc.pickuplearn.ui.view.HeadView
+        android:id="@+id/hv_headbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </com.zc.pickuplearn.ui.view.HeadView>
+    <com.zc.pickuplearn.ui.view.TinyWebView
+        android:id="@+id/progress_webview"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

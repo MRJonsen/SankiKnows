@@ -1,0 +1,216 @@
+[
+    {
+        "outputFile": "/Users/chenbin/workspaces/as/shixue/SankiKnows/album/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-en/values-en.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 53,
+                    "endOffset": 104
+                },
+                "from": {
+                    "file": "/Users/chenbin/workspaces/as/shixue/SankiKnows/album/build/intermediates/bundles/debug/res/values-en/values-en.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 53,
+                        "endOffset": 104
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 109,
+                    "endColumn": 48,
+                    "endOffset": 153
+                },
+                "from": {
+                    "file": "/Users/chenbin/workspaces/as/shixue/SankiKnows/album/build/intermediates/bundles/debug/res/values-en/values-en.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 109,
+                        "endColumn": 48,
+                        "endOffset": 153
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 158,
+                    "endColumn": 80,
+                    "endOffset": 234
+                },
+                "from": {
+                    "file": "/Users/chenbin/workspaces/as/shixue/SankiKnows/album/build/intermediates/bundles/debug/res/values-en/values-en.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 158,
+                        "endColumn": 80,
+                        "endOffset": 234
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 239,
+                    "endColumn": 73,
+                    "endOffset": 308
+                },
+                "from": {
+                    "file": "/Users/chenbin/workspaces/as/shixue/SankiKnows/album/build/intermediates/bundles/debug/res/values-en/values-en.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 239,
+                        "endColumn": 73,
+                        "endOffset": 308
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 313,
+                    "endColumn": 76,
+                    "endOffset": 385
+                },
+                "from": {
+                    "file": "/Users/chenbin/workspaces/as/shixue/SankiKnows/album/build/intermediates/bundles/debug/res/values-en/values-en.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 313,
+                        "endColumn": 76,
+                        "endOffset": 385
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 390,
+                    "endColumn": 48,
+                    "endOffset": 434
+                },
+                "from": {
+                    "file": "/Users/chenbin/workspaces/as/shixue/SankiKnows/album/build/intermediates/bundles/debug/res/values-en/values-en.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 390,
+                        "endColumn": 48,
+                        "endOffset": 434
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 439,
+                    "endColumn": 52,
+                    "endOffset": 487
+                },
+                "from": {
+                    "file": "/Users/chenbin/workspaces/as/shixue/SankiKnows/album/build/intermediates/bundles/debug/res/values-en/values-en.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 439,
+                        "endColumn": 52,
+                        "endOffset": 487
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 492,
+                    "endColumn": 142,
+                    "endOffset": 630
+                },
+                "from": {
+                    "file": "/Users/chenbin/workspaces/as/shixue/SankiKnows/album/build/intermediates/bundles/debug/res/values-en/values-en.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 492,
+                        "endColumn": 142,
+                        "endOffset": 630
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 635,
+                    "endColumn": 153,
+                    "endOffset": 784
+                },
+                "from": {
+                    "file": "/Users/chenbin/workspaces/as/shixue/SankiKnows/album/build/intermediates/bundles/debug/res/values-en/values-en.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 635,
+                        "endColumn": 153,
+                        "endOffset": 784
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 789,
+                    "endColumn": 62,
+                    "endOffset": 847
+                },
+                "from": {
+                    "file": "/Users/chenbin/workspaces/as/shixue/SankiKnows/album/build/intermediates/bundles/debug/res/values-en/values-en.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 789,
+                        "endColumn": 62,
+                        "endOffset": 847
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 852,
+                    "endColumn": 54,
+                    "endOffset": 902
+                },
+                "from": {
+                    "file": "/Users/chenbin/workspaces/as/shixue/SankiKnows/album/build/intermediates/bundles/debug/res/values-en/values-en.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 852,
+                        "endColumn": 54,
+                        "endOffset": 902
+                    }
+                }
+            }
+        ]
+    }
+]

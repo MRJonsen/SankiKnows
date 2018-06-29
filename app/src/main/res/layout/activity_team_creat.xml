@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zc.pickuplearn.ui.teamcircle.view.TeamCreateActivity">
+
+    <android.support.v4.widget.NestedScrollView
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/activity_team_creat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/team_info_edit_bottom_button"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+                <com.zc.pickuplearn.ui.view.HeadView
+                    android:id="@+id/hv_head"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:id="@+id/ll_team_manager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/background"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <com.zc.pickuplearn.ui.view.MyRadioButton
+                        android:id="@+id/rb_team_info"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="1dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="团队通知"
+                        android:textColor="@color/bt_press"
+                        android:textSize="@dimen/text_size_13"
+                        app:rbDrawableTop="@mipmap/team_info_manager"
+                        app:rbDrawableTopSize="60dp" />
+
+                    <com.zc.pickuplearn.ui.view.MyRadioButton
+                        android:id="@+id/rb_practice_manager"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="练习管理"
+                        android:textColor="@color/bt_press"
+                        android:textSize="@dimen/text_size_13"
+                        app:rbDrawableTop="@mipmap/team_practice_manager"
+                        app:rbDrawableTopSize="60dp" />
+
+                    <com.zc.pickuplearn.ui.view.MyRadioButton
+                        android:id="@+id/rb_test_manager"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="考试管理"
+                        android:textColor="@color/bt_press"
+                        android:textSize="@dimen/text_size_13"
+                        app:rbDrawableTop="@mipmap/team_test_manager"
+                        app:rbDrawableTopSize="60dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <requestFocus />
+
+                    <ImageView
+                        android:id="@+id/iv_team_icon"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="10dp"
+                        android:src="@mipmap/team_creat_default_icon"
+                        android:scaleType="fitXY" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="团队名称:"
+                                android:textSize="14sp" />
+
+                            <EditText
+                                android:id="@+id/et_team_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="5dp"
+                                android:hint="@string/warning_input_team_name"
+                                android:background="@android:color/transparent"
+                                android:maxLength="10"
+                                android:gravity="center_vertical"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="团队分类:"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/tv_team_type"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="5dp"
+                                android:gravity="center_vertical"
+                                android:hint="@string/warning_input_team_type"
+                                android:textColorHint="@color/hintColor" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="团队宣言:"
+                                android:textSize="14sp" />
+
+                            <EditText
+                                android:id="@+id/et_team_proclaim"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="5dp"
+                                android:maxLength="20"
+                                android:hint="@string/warning_input_team_declaration"
+                                android:background="@android:color/transparent"
+                                android:gravity="center_vertical"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/background"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="7dp"
+                        android:paddingTop="5dp"
+                        android:text="团队简介:"
+                        android:textColor="@color/gray"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/et_team_introduce"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_margin="7dp"
+                        android:background="@color/white"
+                        android:gravity="top"
+                        android:hint="@string/warning_input_team_introduction"
+                        android:inputType="textMultiLine"
+                        android:maxLength="100"
+                        android:maxLines="10"
+                        android:minLines="8"
+                        android:padding="4dp"
+                        android:scrollbars="vertical"
+                        android:textColorHint="#898989"
+                        android:textSize="@dimen/text_size_14" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/background"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="7dp"
+                    android:paddingTop="5dp"
+                    android:text="团队成员:"
+                    android:textColor="@color/gray"
+                    android:textSize="14sp" />
+
+                <ScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.zc.pickuplearn.ui.view.ExpandGridView
+                            android:id="@+id/egv_team_member_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:background="#ffffff"
+                            android:columnWidth="56dp"
+                            android:gravity="start"
+                            android:listSelector="@android:color/transparent"
+                            android:numColumns="4" />
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_quit_team"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/team_info_edit_bottom_button"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="退出团队"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/ll_holder"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/team_info_edit_bottom_button"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/bt_disband_team"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:text="解散团队" />
+
+                <Button
+                    android:id="@+id/bt_transfer_team"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:gravity="center"
+                    android:text="转让团长"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>

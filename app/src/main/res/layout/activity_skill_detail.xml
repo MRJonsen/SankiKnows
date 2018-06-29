@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_page_bg_grad"
+    android:orientation="vertical"
+    tools:context="com.zc.pickuplearn.ui.district_manager.SkillReportActivity">
+
+    <include layout="@layout/common_tool_bar" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/srl_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background">
+
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@color/background"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="2.5dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:text="技能详情"
+                        android:paddingLeft="20dp"
+                        android:textColor="@color/text_color_black"
+                        android:textSize="@dimen/text_size_normal" />
+
+                </LinearLayout>
+                <View
+                    android:background="@color/divider_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_divider"/>
+                <LinearLayout
+                    android:paddingLeft="25dp"
+                    android:paddingRight="25dp"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/default_margin"
+                    android:paddingBottom="@dimen/default_margin"
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textColor="@color/text_color_black"
+                            android:text="能力项等级要求："
+                            android:textSize="15sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/tv_level_request"
+                            android:textColor="@color/text_color_black"
+                            android:textSize="15sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <ImageView
+                            android:id="@+id/iv_level"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:scaleType="fitXY" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/default_margin"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textColor="@color/text_color_black"
+                            android:text="能力项等级说明："
+                            android:textSize="15sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/tv_tv_level_introduce"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/text_color_black"
+                            android:textSize="13sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@color/background"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="2.5dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:text="学习推荐"
+                        android:paddingLeft="20dp"
+                        android:textColor="@color/text_color_black"
+                        android:textSize="@dimen/text_size_normal" />
+
+                </LinearLayout>
+                <View
+                    android:background="@color/divider_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_divider"/>
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rc_content"
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </ScrollView>
+
+        <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout><!--</FrameLayout>-->
+
+</LinearLayout>

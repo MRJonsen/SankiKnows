@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clipChildren="true"
+    tools:context="com.zc.pickuplearn.ui.main.widget.MainActivity">
+
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/divider_height_middle"-->
+    <!--android:background="@color/divider_color" />-->
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/rl_tab"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:background="@android:color/transparent">-->
+
+        <!--<me.majiajie.pagerbottomtabstrip.PagerBottomTabLayout-->
+            <!--android:id="@+id/tab"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:elevation="8dp" />-->
+    <!--</RelativeLayout>-->
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/design_fab_size_normal"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:background="@android:color/transparent">-->
+
+    <!--<android.support.design.widget.FloatingActionButton-->
+    <!--android:id="@+id/bt_fa"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_marginBottom="5dp"-->
+    <!--android:src="@mipmap/bottom_center_add"-->
+    <!--app:backgroundTint="@color/color_tab_background"-->
+    <!--app:borderWidth="0dp"-->
+    <!--app:elevation="1dp"-->
+    <!--app:fabSize="normal"-->
+    <!--app:pressedTranslationZ="1dp"-->
+    <!--app:rippleColor="@android:color/transparent" />-->
+    <!--<ImageButton-->
+        <!--android:id="@+id/bt_fa"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginBottom="5dp"-->
+        <!--android:background="@mipmap/main_center_bt" />-->
+    <!--</RelativeLayout>-->
+    <!--android:layout_above="@id/rl_tab"-->
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        >
+
+    </FrameLayout>
+    <include layout="@layout/main_bottom_tab"/>
+    <!--底部导航栏上的虚线-->
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/divider_height_middle"-->
+        <!--android:layout_above="@id/rl_tab"-->
+        <!--android:background="@color/divider_color"-->
+        <!--android:visibility="gone" />-->
+</RelativeLayout>

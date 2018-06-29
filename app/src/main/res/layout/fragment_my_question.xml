@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="com.zc.pickuplearn.ui.dynamic.widget.recANDnew.view.WenDaFragment">
+
+    <LinearLayout
+        android:id="@+id/ll_search"
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:background="@color/tab_layout_bg"
+        android:orientation="horizontal">
+
+        <com.zc.pickuplearn.ui.view.ClearEditText
+            android:id="@+id/et_search"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="10dip"
+            android:layout_weight="1"
+            android:background="@drawable/search_text_border"
+            android:drawableLeft="@mipmap/search_normal"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:hint="@string/search_with_key"
+            android:paddingLeft="10dp"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/bt_search"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/log_reg_bt_selector"
+            android:text="@string/search"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_more"
+        style="@style/content"
+        android:layout_width="match_parent"
+        android:layout_height="44.0dip"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_wenda_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dip"
+            android:text="更多>>>"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_divider"
+        android:background="@color/divider_color" />
+
+    <TextView
+        android:id="@+id/tv_warning"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="暂无数据"
+        android:textColor="@color/black"
+        android:visibility="gone" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/srl_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.youth.xframe.widget.loadingview.XLoadingView
+            android:id="@+id/x_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.github.jdsjlzx.recyclerview.LRecyclerView
+                android:id="@+id/list"
+                android:background="@color/background"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.youth.xframe.widget.loadingview.XLoadingView>
+
+        <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

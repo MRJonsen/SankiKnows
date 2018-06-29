@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="0.25dp" >
+
+    <TextView
+        android:id="@+id/channel_gridview_item"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/classification_grid_item_selector"
+        android:gravity="center"
+        android:text="篮球天地"
+        android:textColor="@drawable/channel_gridview_item_click"
+        android:textSize="15sp" />
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_suggetion"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="com.zc.pickuplearn.ui.suggestion.view.SuggestionActivity">
+
+    <com.zc.pickuplearn.ui.view.HeadView
+        android:id="@+id/hv_headbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.zc.pickuplearn.ui.view.HeadView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_margin="14dp"
+        android:background="@color/background"
+        android:padding="1dp">
+
+        <EditText
+            android:id="@+id/et_sugguest_input"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@color/white"
+            android:gravity="top"
+            android:hint="请输入您的反馈意见(200字以内)"
+            android:inputType="textMultiLine"
+            android:maxLength="200"
+            android:maxLines="10"
+            android:minLines="8"
+            android:padding="4dp"
+            android:scrollbars="vertical"
+            android:textColorHint="#898989"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/tv_sugguest_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:text="还可以输入200字"
+            android:textColor="@color/label_color"
+            android:textSize="@dimen/text_size_14" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:text="您的宝贵意见是推动我们向前的动力，我们期待听到您的声音。"
+        android:textSize="@dimen/text_size_14" />
+</LinearLayout>

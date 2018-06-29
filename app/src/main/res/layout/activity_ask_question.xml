@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_ask_question"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.zc.pickuplearn.ui.askquestion.view.AskQuestionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.zc.pickuplearn.ui.view.HeadView
+            android:id="@+id/hv_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.zc.pickuplearn.ui.view.HeadView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_question"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/white"
+                android:gravity="top"
+                android:hint="@string/ask_question_hint"
+                android:inputType="textMultiLine"
+                android:maxLength="200"
+                android:padding="4dp"
+                android:scrollbars="vertical"
+                android:textColorHint="#898989"
+                android:textSize="@dimen/text_size_14" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@drawable/not_true_line"
+            android:layerType="software" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                android:layout_marginLeft="@dimen/margin_7dp"
+                android:text="关键词:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_tag"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_7dp"
+                android:textColor="@color/hintColor"
+                android:text="@string/ask_question_tag_hint"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@drawable/not_true_line"
+            android:layerType="software" />
+    </LinearLayout>
+    <!--底部布局模块-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider_color" />
+
+            <ScrollView
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:scrollbars="none">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/ask_anomynous"
+                            android:layout_width="@dimen/ask_image_size"
+                            android:layout_height="@dimen/ask_image_size"
+                            android:layout_marginRight="10dp"
+                            android:background="@mipmap/ask_anomynous" />
+
+                        <ImageButton
+                            android:id="@+id/ask_score_icon_normal"
+                            android:layout_width="@dimen/ask_image_size"
+                            android:layout_height="@dimen/ask_image_size"
+                            android:layout_marginRight="10dp"
+                            android:background="@mipmap/ask_score_icon_normal" />
+
+                        <ImageButton
+                            android:id="@+id/ask_photo_normal"
+                            android:layout_width="@dimen/ask_image_size"
+                            android:layout_height="@dimen/ask_image_size"
+                            android:background="@mipmap/ask_photo_normal" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </ScrollView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider_color" />
+        </LinearLayout>
+
+        <com.zc.pickuplearn.ui.view.KeyboardLayout
+            android:id="@+id/bottom_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+            <!--图片-->
+            <LinearLayout
+                android:id="@+id/bottom_content_pic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background"
+                android:padding="5dp"
+                android:visibility="gone">
+
+                <GridView
+                    android:id="@+id/gridview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:horizontalSpacing="5dp"
+                    android:numColumns="4"
+                    android:padding="5dp"
+                    android:verticalSpacing="5dp" />
+
+            </LinearLayout>
+            <!--悬赏-->
+            <LinearLayout
+                android:id="@+id/bottom_content_score"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="选择悬赏积分:"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_18" />
+
+                    <com.hhl.library.FlowTagLayout
+                        android:id="@+id/score_flow_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="您可用的积分:"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_18" />
+
+                        <TextView
+                            android:id="@+id/tv_score_score"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="0"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_18" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="提高悬赏，更容易吸引高手为你解答"
+                        android:textColor="@color/gray" />
+                </LinearLayout>
+            </LinearLayout>
+            <!--匿名-->
+            <LinearLayout
+                android:id="@+id/bottom_content_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:visibility="gone">
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_margin="10dp"
+                        android:text="匿名提问"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_18" />
+
+                    <com.zc.pickuplearn.ui.view.UISwitchButton xmlns:switch="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/uisb_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="10dp"
+                        android:checked="false"
+                        switch:bmHeight="30dp"
+                        switch:bmWidth="90dp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_height_middle"
+                    android:background="@color/gray" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="匿名提问扣10个积分"
+                        android:textColor="@color/gray" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="当前积分"
+                            android:textColor="@color/gray" />
+
+                        <TextView
+                            android:id="@+id/tv_person_score"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="5"
+                            android:textColor="@color/gray" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </com.zc.pickuplearn.ui.view.KeyboardLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/chatting_bg_default"
+    android:orientation="vertical">
+
+    <com.zc.pickuplearn.ui.view.HeadView
+        android:id="@+id/hv_headbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.zc.pickuplearn.ui.view.HeadView>
+
+    <ListView
+        android:id="@+id/lv_data"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:cacheColorHint="@null"
+        android:divider="@null" />
+
+    <LinearLayout
+        android:id="@+id/ll_answer"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/black"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/rl_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="4dp"
+            android:visibility="visible">
+
+            <Button
+                android:id="@+id/btn_add"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="6dp"
+                android:background="@mipmap/icon_chattype_add"
+                android:visibility="visible" />
+
+            <RelativeLayout
+                android:id="@+id/edittext_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_weight="1"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="bottom">
+
+                <EditText
+                    android:id="@+id/et_sendmessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/login_edittext_border"
+                    android:maxLength="1000"
+                    android:minHeight="40dp"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="3dp"
+                    android:singleLine="true"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_send"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/log_reg_bt_selector"
+                android:text="发送"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

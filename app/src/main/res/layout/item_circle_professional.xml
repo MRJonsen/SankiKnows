@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rl_circle_item"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@drawable/professional_circle_item_border">
+    <ImageView
+        android:id="@+id/iv_circle_icon"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:src="@mipmap/default_user_circle_icon"
+        android:layout_centerVertical="true"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+
+    <TextView
+        android:id="@+id/cirlce_name"
+        android:layout_toRightOf="@id/iv_circle_icon"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_centerVertical="true"
+
+        android:gravity="center"
+        android:text="@string/test"/>
+    <TextView
+        android:id="@+id/circle_ranking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textSize="17sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"/>
+    <ImageView
+        android:id="@+id/iv_ranking"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_centerVertical="true"
+        android:visibility="invisible"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+    <ImageView
+        android:id="@+id/professional_item_selected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:visibility="visible"
+        android:src="@mipmap/professional_selected"/>
+</RelativeLayout>

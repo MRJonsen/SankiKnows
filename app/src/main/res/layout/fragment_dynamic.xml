@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zc.pickuplearn.ui.dynamic.view.DynamicFragment">
+
+    <RelativeLayout
+        android:layout_height="48dip"
+        android:layout_width="fill_parent"
+        android:background="@color/colorPrimary" >
+        <Button
+            android:id="@+id/bt_category"
+            style="@style/page_title_str"
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="分类" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:text="@string/tab_tag_dynamic" />
+        <Button
+            android:background="@android:color/transparent"
+            android:id="@+id/bt_ask"
+            style="@style/page_title_str"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="提问" />
+    </RelativeLayout>
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tl_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tab_layout_height"
+        app:tabMode="fixed"
+        app:tabGravity="fill"
+        android:background="@color/tab_layout_bg"
+        app:tabIndicatorColor="@android:color/transparent"
+        app:tabSelectedTextColor="@color/bt_un_press"
+        app:tabTextColor="@color/color_tab_unselected">
+
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_dynamic_content"
+        android:background="@color/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_change_psw"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/default_padding_left"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ui.mine.changepsw.ChangePswActivity">
+
+    <com.zc.pickuplearn.ui.view.HeadView
+        android:id="@+id/hv_headbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_padding_left"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/tv_uid"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@color/background"
+                android:scaleType="center"
+                android:src="@mipmap/icon_psw" />
+
+            <EditText
+                android:id="@+id/dialog_change_pwd_oldPwd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                android:layout_toRightOf="@+id/tv_uid"
+                android:background="@null"
+                android:hint="请输入旧密码"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:singleLine="true"
+                android:textColorHint="@color/hintColor"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/text_size_14">
+
+                <requestFocus />
+            </EditText>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_divider"
+            android:background="@color/background" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/tv_psw"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@color/background"
+                android:scaleType="center"
+                android:src="@mipmap/icon_psw" />
+
+            <EditText
+                android:id="@+id/dialog_change_pwd_newPsw1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                android:layout_toRightOf="@+id/tv_psw"
+                android:background="@null"
+                android:hint="请输入新密码"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:textColorHint="@color/hintColor"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/text_size_14" />
+
+            <!--<ImageView-->
+            <!--android:layout_width="20dp"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:src="@mipmap/log_delet_data_icon"-->
+            <!--android:visibility="invisible" />-->
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_divider"
+            android:background="@color/background" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/tv_res_surepsw"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@color/background"
+                android:scaleType="center"
+                android:src="@mipmap/icon_psw" />
+
+            <EditText
+                android:id="@+id/dialog_change_pwd_newPsw2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                android:layout_toRightOf="@+id/tv_res_surepsw"
+                android:background="@null"
+                android:hint="请确认新密码"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:textColorHint="@color/hintColor"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/text_size_14" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_divider"
+            android:background="@color/background" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/default_padding_left"
+        android:layout_marginLeft="@dimen/default_padding_left"
+        android:layout_marginBottom="@dimen/default_padding_left"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/dialog_change_pwd_cancel"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="14dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_change_psw_cancel"
+            android:text="取 消"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_size_14" />
+
+        <Button
+            android:id="@+id/dialog_change_pwd_ok"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="14dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_change_psw_sure"
+            android:text="确 认"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size_14" />
+    </LinearLayout>
+</LinearLayout>

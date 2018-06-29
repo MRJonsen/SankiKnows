@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_page_bg_grad"
+    android:clickable="true"
+    android:orientation="vertical"
+    tools:context="com.zc.pickuplearn.ui.teamcircle.view.TeamCircleFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.zc.pickuplearn.ui.view.HeadView
+            android:id="@+id/hv_headbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:id="@+id/rl_mine_new_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:id="@+id/ib_mine_new_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:src="@mipmap/mine_warning"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_mine_new_msg_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/circle"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_12"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <View
+        android:background="@color/background"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"/>
+    <com.dalong.francyconverflow.FancyCoverFlow
+        android:id="@+id/fancyCoverFlow"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:paddingBottom="@dimen/dp_10"
+        android:layout_height="@dimen/team_circle_home_3d_header_width" />
+    <View
+        android:background="@color/background"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"/>
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginTop="@dimen/margin_7dp"
+            android:layout_marginBottom="@dimen/margin_7dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@color/white"
+            android:layout_marginLeft="20dp"
+            android:text="@string/team_circle_dynamic"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+    <View
+        android:background="@color/background"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"/>
+    <com.github.jdsjlzx.recyclerview.LRecyclerView
+        android:id="@+id/rc_team_dynamic"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.github.jdsjlzx.recyclerview.LRecyclerView>
+</LinearLayout>

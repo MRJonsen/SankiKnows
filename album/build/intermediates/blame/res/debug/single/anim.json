@@ -1,0 +1,66 @@
+[
+    {
+        "merged": "/Users/chenbin/workspaces/as/shixue/SankiKnows/album/build/intermediates/res/merged/debug/anim/abc_shrink_fade_out_from_bottom.xml",
+        "source": "/Users/chenbin/.android/build-cache/61acc9181ce0eccd495358aa70b09ff6fc02e094/output/res/anim/abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/chenbin/workspaces/as/shixue/SankiKnows/album/build/intermediates/res/merged/debug/anim/abc_popup_exit.xml",
+        "source": "/Users/chenbin/.android/build-cache/61acc9181ce0eccd495358aa70b09ff6fc02e094/output/res/anim/abc_popup_exit.xml"
+    },
+    {
+        "merged": "/Users/chenbin/workspaces/as/shixue/SankiKnows/album/build/intermediates/res/merged/debug/anim/design_snackbar_in.xml",
+        "source": "/Users/chenbin/.android/build-cache/a322eaec6bd55bd2a6ffac5ae81ce20fa334b2cf/output/res/anim/design_snackbar_in.xml"
+    },
+    {
+        "merged": "/Users/chenbin/workspaces/as/shixue/SankiKnows/album/build/intermediates/res/merged/debug/anim/abc_popup_enter.xml",
+        "source": "/Users/chenbin/.android/build-cache/61acc9181ce0eccd495358aa70b09ff6fc02e094/output/res/anim/abc_popup_enter.xml"
+    },
+    {
+        "merged": "/Users/chenbin/workspaces/as/shixue/SankiKnows/album/build/intermediates/res/merged/debug/anim/design_bottom_sheet_slide_out.xml",
+        "source": "/Users/chenbin/.android/build-cache/a322eaec6bd55bd2a6ffac5ae81ce20fa334b2cf/output/res/anim/design_bottom_sheet_slide_out.xml"
+    },
+    {
+        "merged": "/Users/chenbin/workspaces/as/shixue/SankiKnows/album/build/intermediates/res/merged/debug/anim/design_fab_out.xml",
+        "source": "/Users/chenbin/.android/build-cache/a322eaec6bd55bd2a6ffac5ae81ce20fa334b2cf/output/res/anim/design_fab_out.xml"
+    },
+    {
+        "merged": "/Users/chenbin/workspaces/as/shixue/SankiKnows/album/build/intermediates/res/merged/debug/anim/design_snackbar_out.xml",
+        "source": "/Users/chenbin/.android/build-cache/a322eaec6bd55bd2a6ffac5ae81ce20fa334b2cf/output/res/anim/design_snackbar_out.xml"
+    },
+    {
+        "merged": "/Users/chenbin/workspaces/as/shixue/SankiKnows/album/build/intermediates/res/merged/debug/anim/abc_slide_out_top.xml",
+        "source": "/Users/chenbin/.android/build-cache/61acc9181ce0eccd495358aa70b09ff6fc02e094/output/res/anim/abc_slide_out_top.xml"
+    },
+    {
+        "merged": "/Users/chenbin/workspaces/as/shixue/SankiKnows/album/build/intermediates/res/merged/debug/anim/abc_slide_in_bottom.xml",
+        "source": "/Users/chenbin/.android/build-cache/61acc9181ce0eccd495358aa70b09ff6fc02e094/output/res/anim/abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "/Users/chenbin/workspaces/as/shixue/SankiKnows/album/build/intermediates/res/merged/debug/anim/abc_fade_in.xml",
+        "source": "/Users/chenbin/.android/build-cache/61acc9181ce0eccd495358aa70b09ff6fc02e094/output/res/anim/abc_fade_in.xml"
+    },
+    {
+        "merged": "/Users/chenbin/workspaces/as/shixue/SankiKnows/album/build/intermediates/res/merged/debug/anim/abc_fade_out.xml",
+        "source": "/Users/chenbin/.android/build-cache/61acc9181ce0eccd495358aa70b09ff6fc02e094/output/res/anim/abc_fade_out.xml"
+    },
+    {
+        "merged": "/Users/chenbin/workspaces/as/shixue/SankiKnows/album/build/intermediates/res/merged/debug/anim/design_fab_in.xml",
+        "source": "/Users/chenbin/.android/build-cache/a322eaec6bd55bd2a6ffac5ae81ce20fa334b2cf/output/res/anim/design_fab_in.xml"
+    },
+    {
+        "merged": "/Users/chenbin/workspaces/as/shixue/SankiKnows/album/build/intermediates/res/merged/debug/anim/abc_grow_fade_in_from_bottom.xml",
+        "source": "/Users/chenbin/.android/build-cache/61acc9181ce0eccd495358aa70b09ff6fc02e094/output/res/anim/abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/chenbin/workspaces/as/shixue/SankiKnows/album/build/intermediates/res/merged/debug/anim/design_bottom_sheet_slide_in.xml",
+        "source": "/Users/chenbin/.android/build-cache/a322eaec6bd55bd2a6ffac5ae81ce20fa334b2cf/output/res/anim/design_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "/Users/chenbin/workspaces/as/shixue/SankiKnows/album/build/intermediates/res/merged/debug/anim/abc_slide_in_top.xml",
+        "source": "/Users/chenbin/.android/build-cache/61acc9181ce0eccd495358aa70b09ff6fc02e094/output/res/anim/abc_slide_in_top.xml"
+    },
+    {
+        "merged": "/Users/chenbin/workspaces/as/shixue/SankiKnows/album/build/intermediates/res/merged/debug/anim/abc_slide_out_bottom.xml",
+        "source": "/Users/chenbin/.android/build-cache/61acc9181ce0eccd495358aa70b09ff6fc02e094/output/res/anim/abc_slide_out_bottom.xml"
+    }
+]

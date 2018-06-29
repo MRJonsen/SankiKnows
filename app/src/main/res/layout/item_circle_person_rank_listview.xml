@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="@color/biankuang" />
+
+        <LinearLayout
+            android:layout_width="60dip"
+            android:layout_height="fill_parent"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/tv_postion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1st"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="@color/biankuang" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/tv_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="李二"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="@color/biankuang" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/tv_qustion_sum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2734"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="@color/biankuang" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/tv_answer_sum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="436"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="@color/biankuang" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/tv_take_sum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="436"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="@color/biankuang" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/tv_sumpoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="436"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="@color/biankuang" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/biankuang" />
+
+</LinearLayout>

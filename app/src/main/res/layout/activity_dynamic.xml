@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_page_bg_grad"
+    android:orientation="vertical"
+    tools:context="com.zc.pickuplearn.ui.question_and_answer.DynamicActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bar_default_height"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/iv_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:minWidth="45dp"
+
+            android:paddingLeft="@dimen/default_margin"
+            android:src="@mipmap/back" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.flyco.tablayout.SegmentTabLayout
+                android:id="@+id/stl_segment"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                tl:tl_bar_color="@color/transparent"
+                tl:tl_indicator_color="#ffffff"
+                tl:tl_indicator_corner_radius="2dp"
+                tl:tl_tab_padding="15dp"
+                tl:tl_textBold="BOTH"
+                tl:tl_textSelectColor="@color/colorPrimary"
+                tl:tl_textUnselectColor="@color/white"
+                tl:tl_textsize="@dimen/text_size_normal" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/ib_search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/transparent"
+            android:minWidth="45dp"
+            android:paddingRight="@dimen/default_margin"
+            android:src="@mipmap/search"
+            tools:ignore="ObsoleteLayoutParam" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <me.majiajie.pagerbottomtabstrip.LazyViewPager
+            android:id="@+id/vp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+
+
+        <ImageButton
+            android:id="@+id/bt_ask"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right|bottom"
+            android:layout_marginBottom="@dimen/default_margin"
+            android:layout_marginRight="@dimen/default_margin"
+            android:background="@mipmap/icon_ask_question"
+            android:foreground="?attr/selectableItemBackground" />
+    </FrameLayout>
+</LinearLayout>

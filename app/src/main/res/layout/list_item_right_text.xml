@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_time_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/chatsystem_bg"
+        android:gravity="center"
+        android:textColor="#CCCCCC"
+        android:textSize="13dip"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="@dimen/head_size"
+            android:layout_height="@dimen/head_size"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@mipmap/default_user_circle_icon" />
+
+        <TextView
+            android:id="@+id/btn_right_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/iv_icon"
+            android:autoLink="all"
+            android:background="@drawable/chatto_bg_normal"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="2dp"
+            android:minHeight="50dp"
+            android:textIsSelectable="true"
+            android:text="23123128ishdhashdahsdadasdhasdhasdjadashdadsdadsdad"
+            android:textColor="#404040"
+            android:textSize="@dimen/text_size_normal" />
+    </RelativeLayout>
+
+</LinearLayout>

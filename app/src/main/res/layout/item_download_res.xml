@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:id="@+id/ll_item"
+    android:background="@drawable/select_linerlayout_item"
+    android:paddingBottom="@dimen/margin_small"
+    android:paddingTop="@dimen/margin_small" >
+
+    <ImageView
+        android:layout_width="@dimen/res_icon_size"
+        android:layout_height="@dimen/res_icon_size"
+        android:background="@mipmap/course_play_normal_style_green" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:maxLines="1"
+        android:text="@string/test"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_13" />
+
+    <View
+        android:layout_width="@dimen/divider_height_middle"
+        android:layout_height="match_parent"
+        android:background="@color/divider_color" />
+
+    <LinearLayout
+        android:layout_width="@dimen/item_height_middle"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_small"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/iv_status_icon"
+            android:layout_width="@dimen/res_icon_size2"
+            android:layout_height="@dimen/res_icon_size2"
+            android:background="@mipmap/course_catalog_download" />
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下载"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_12" />
+    </LinearLayout>
+
+</LinearLayout>

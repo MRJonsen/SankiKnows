@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zc.pickuplearn.ui.group.view.GroupFragment">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.zc.pickuplearn.ui.view.HeadView
+        android:id="@+id/hv_headbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.zc.pickuplearn.ui.view.HeadView>
+    <RelativeLayout
+        android:id="@+id/rl_mine_new_msg"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/ib_mine_new_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@mipmap/mine_warning"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_mine_new_msg_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circle"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="end"
+            android:text=""
+            android:visibility="invisible"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_12" />
+    </RelativeLayout>
+</RelativeLayout>
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tl_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tab_layout_height"
+        android:background="@color/tab_layout_bg"
+        app:tabIndicatorColor="@android:color/transparent"
+        app:tabMode="scrollable"
+        android:visibility="gone"
+        app:tabPaddingStart="5dp"
+        app:tabSelectedTextColor="@color/bt_un_press"
+        app:tabTextColor="@color/color_tab_unselected">
+
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_circle_content"
+        android:background="@color/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

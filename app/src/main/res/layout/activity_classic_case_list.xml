@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_classic_case_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zc.pickuplearn.ui.classiccase.view.ClassicCaseListActivity">
+
+    <com.zc.pickuplearn.ui.view.HeadView
+        android:id="@+id/hv_headbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.zc.pickuplearn.ui.view.HeadView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/type_bar_hight"
+        android:background="@color/tab_layout_bg">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/type_bar_hight"
+            android:layout_alignParentLeft="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/tv_type_choose"
+                android:layout_width="60dp"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_height="@dimen/type_bar_hight"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:drawableRight="@mipmap/ic_down"
+                android:text="@string/choose"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_type"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/type_bar_hight"
+                android:maxLength="10"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:text="@string/type_all"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/type_bar_hight"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/tv_hot"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/type_bar_hight"
+                android:background="@drawable/selector_classic_case_type"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/follow_hot"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/tv_new"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/type_bar_hight"
+                android:background="@drawable/selector_classic_case_type"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/follow_new"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+      <include layout="@layout/refresh_loadmore_contentlayout"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_type"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/pop_show_bg"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/type_bar_hight"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/type_bar_hight"
+                    android:layout_alignParentLeft="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/type_bar_hight"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="@string/type" />
+
+                    <TextView
+                        android:id="@+id/tv_type_all"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/type_bar_hight"
+                        android:background="@drawable/grid_item_selector"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="@string/type_all" />
+
+                    <TextView
+                        android:id="@+id/tv_type_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/type_bar_hight"
+                        android:background="@drawable/grid_item_selector"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="@string/type_txt" />
+
+                    <TextView
+                        android:id="@+id/tv_type_video"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/type_bar_hight"
+                        android:background="@drawable/grid_item_selector"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="@string/type_video" />
+
+                    <TextView
+                        android:id="@+id/tv_type_picture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/type_bar_hight"
+                        android:background="@drawable/grid_item_selector"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="@string/type_picture" />
+
+                    <TextView
+                        android:id="@+id/tv_type_other"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/type_bar_hight"
+                        android:background="@drawable/grid_item_selector"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="@string/type_other" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

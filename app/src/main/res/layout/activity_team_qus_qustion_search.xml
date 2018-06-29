@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_team_qus_qustion_search"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zc.pickuplearn.ui.teamcircle.view.TeamQusQustionSearchActivity">
+
+    <com.zc.pickuplearn.ui.view.HeadView
+        android:id="@+id/hv_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.zc.pickuplearn.ui.view.SeachBar
+        android:id="@+id/sb_search_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.github.jdsjlzx.recyclerview.LRecyclerView
+        android:id="@+id/lrc_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

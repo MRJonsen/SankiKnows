@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/main_page_bg_grad"
+    android:id="@+id/root"
+    tools:context="com.zc.pickuplearn.ui.district_manager.QuestionBankActivity">
+
+    <include layout="@layout/common_tool_bar" />
+    <com.flyco.tablayout.SlidingTabLayout
+        android:id="@+id/ctl_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        tl:tl_divider_color="#1A000000"
+        tl:tl_divider_padding="13dp"
+        tl:tl_indicator_color="@color/bt_un_press"
+        tl:tl_indicator_height="1.5dp"
+        tl:tl_tab_padding="22dp"
+        tl:tl_tab_space_equal="true"
+        tl:tl_indicator_margin_left="@dimen/default_margin"
+        tl:tl_indicator_margin_right="@dimen/default_margin"
+        tl:tl_textSelectColor="@color/bt_un_press"
+        tl:tl_textUnselectColor="@color/color_tab_unselected"
+        tl:tl_underline_color="#1A000000"
+        tl:tl_underline_height="1dp" />
+
+    <!--<android.support.design.widget.TabLayout-->
+    <!--android:id="@+id/tl_indicator"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/tab_layout_height"-->
+    <!--app:tabMode="fixed"-->
+    <!--app:tabGravity="fill"-->
+    <!--android:background="@color/white"-->
+    <!--app:tabIndicatorColor="@color/bt_un_press"-->
+    <!--app:tabSelectedTextColor="@color/bt_un_press"-->
+    <!--app:tabTextColor="@color/color_tab_unselected">-->
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_home_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background">
+
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_dynamic_more"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zc.pickuplearn.ui.dynamic.widget.theMoreDynamic.view.DynamicMoreActivity">
+    <com.zc.pickuplearn.ui.view.HeadView
+        android:id="@+id/hv_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.zc.pickuplearn.ui.view.HeadView>
+<FrameLayout
+    android:id="@+id/fl_dynamicMore_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+</FrameLayout>
+</LinearLayout>

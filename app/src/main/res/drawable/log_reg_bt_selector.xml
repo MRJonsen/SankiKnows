@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<item android:state_pressed="true" android:drawable="@drawable/button_press"/>-->
+    <!--<item android:state_enabled="false" android:drawable="@drawable/button_useless"/>-->
+    <!--<item  android:drawable="@drawable/button_unpress"/>-->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/bt_press"/>
+            <corners android:radius="4dp" />
+        </shape>
+    </item>
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/gray"/>
+            <corners android:radius="4dp" />
+        </shape>
+    </item>
+    <item >
+        <shape android:shape="rectangle">
+            <solid android:color="@color/bt_un_press"/>
+            <corners android:radius="4dp" />
+        </shape>
+    </item>
+</selector>

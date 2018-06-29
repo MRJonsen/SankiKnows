@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.zc.pickuplearn.ui.home_new.view.HomeNewFragment">
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tl_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tab_layout_height"
+        app:tabMode="fixed"
+        app:tabGravity="fill"
+        android:background="@color/white"
+        app:tabIndicatorColor="@color/bt_un_press"
+        app:tabSelectedTextColor="@color/bt_un_press"
+        app:tabTextColor="@color/color_tab_unselected">
+
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_home_content"
+        android:background="@color/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

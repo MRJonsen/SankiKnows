@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!--android:adjustViewBounds="true"-->
+    <!--<de.hdodenhof.circleimageview.CircleImageView-->
+    <!--android:id="@+id/iv_professor_icon"-->
+    <!--android:layout_marginRight="5dp"-->
+    <!--android:layout_marginLeft="5dp"-->
+    <!--android:scaleType="fitStart"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content" />-->
+    <RelativeLayout
+        android:id="@+id/rl_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/jdbh_zjjd_bg">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_professor_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="13dp"
+            android:src="@mipmap/my_head" />
+
+        <TextView
+            android:id="@+id/tv_professor_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_professor_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:text="李健"
+            android:textColor="#333333"
+            android:textSize="@dimen/sp_14" />
+    </RelativeLayout>
+</RelativeLayout>

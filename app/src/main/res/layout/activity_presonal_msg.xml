@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_presonal_msg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/main_page_bg_grad"
+    android:clickable="true"
+    tools:context="com.zc.pickuplearn.ui.msgbox.PersonalMsgActivity">
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/transparent">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="5dp"
+            android:paddingLeft="@dimen/default_padding_left"
+            android:paddingRight="@dimen/default_padding_left"
+            android:paddingTop="5dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/back" />
+
+        <!--<View-->
+            <!--android:id="@+id/view_temp"-->
+            <!--android:layout_width="1dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginBottom="8dp"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:layout_toRightOf="@id/iv_back"-->
+            <!--android:background="@color/colorPrimary" />-->
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="@string/msg_box"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cb_edit"
+                android:text="编辑"
+                android:button="@null"
+                android:textColor="@color/white"
+                android:layout_width="60dp"
+                android:gravity="center"
+                android:layout_height="match_parent" />
+            <!--<ImageButton-->
+                <!--android:id="@+id/ib_msg_clear"-->
+                <!--android:layout_width="20dp"-->
+                <!--android:layout_height="20dp"-->
+                <!--android:background="@android:color/transparent"-->
+                <!--android:scaleType="fitXY"-->
+                <!--android:src="@mipmap/msg_clear" />-->
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.flyco.tablayout.SlidingTabLayout
+        android:id="@+id/ctl_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        tl:tl_divider_color="#1A000000"
+        tl:tl_divider_padding="13dp"
+        tl:tl_divider_width="1dp"
+        tl:tl_indicator_color="@color/bt_un_press"
+        tl:tl_indicator_height="1.5dp"
+        tl:tl_tab_padding="22dp"
+        tl:tl_tab_space_equal="true"
+        tl:tl_textSelectColor="@color/bt_un_press"
+        tl:tl_textUnselectColor="@color/color_tab_unselected"
+        tl:tl_underline_color="#1A000000"
+        tl:tl_underline_height="1dp"/>
+
+    <!--<android.support.design.widget.TabLayout-->
+        <!--android:id="@+id/tl_indicator"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/tab_layout_height"-->
+        <!--app:tabMode="fixed"-->
+        <!--app:tabGravity="fill"-->
+        <!--android:background="@color/white"-->
+        <!--app:tabIndicatorColor="@color/bt_un_press"-->
+        <!--app:tabSelectedTextColor="@color/bt_un_press"-->
+        <!--app:tabTextColor="@color/color_tab_unselected">-->
+
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_home_content"
+        android:background="@color/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

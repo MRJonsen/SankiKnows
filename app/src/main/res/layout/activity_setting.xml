@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.mine.setting.view.SettingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:orientation="vertical">
+
+        <com.zc.pickuplearn.ui.view.HeadView
+            android:id="@+id/hv_headbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.zc.pickuplearn.ui.view.HeadView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/ll_user"
+                    style="@style/MineItemStyle"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/item_margin_top"
+                    android:background="@drawable/select_linerlayout_item">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/setting_user"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:textColor="@color/label_color" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:contentDescription="@string/setting_about"
+                        android:src="@mipmap/my_right_arrow" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_nickname"
+                    style="@style/MineItemStyle"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/select_linerlayout_item">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/setting_nickname"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_nickname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:textColor="@color/label_color" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:contentDescription="@string/setting_about"
+                        android:src="@mipmap/my_right_arrow" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_score"
+                    style="@style/MineItemStyle"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/select_linerlayout_item">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/setting_score"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:textColor="@color/label_color" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_level"
+                    style="@style/MineItemStyle"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/select_linerlayout_item">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/setting_level"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_level"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:textColor="@color/label_color" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_changepsw"
+                    style="@style/MineItemStyle"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/select_linerlayout_item">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/setting_changepsw"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_changepsw"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:textColor="@color/label_color" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:contentDescription="@string/setting_about"
+                        android:src="@mipmap/my_right_arrow" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_cache"
+                    style="@style/MineItemStyle"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/item_margin_top"
+                    android:background="@drawable/select_linerlayout_item">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/setting_clear_cache"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:contentDescription="@string/setting_about"
+                        android:src="@mipmap/my_right_arrow" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_sugguest"
+                    style="@style/MineItemStyle"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/select_linerlayout_item">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/setting_suggest"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:contentDescription="@string/setting_about"
+                        android:src="@mipmap/my_right_arrow" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_check_version"
+                    style="@style/MineItemStyle"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/select_linerlayout_item">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/setting_check_version"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:id="@+id/tv_version"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:textColor="@color/label_color" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:contentDescription="@string/setting_about"
+                        android:src="@mipmap/my_right_arrow" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_about"
+                    style="@style/MineItemStyle"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/select_linerlayout_item">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/setting_about"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:contentDescription="@string/setting_about"
+                        android:src="@mipmap/my_right_arrow" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_logout"
+                    style="@style/MineItemStyle"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/item_margin_top"
+                    android:background="@drawable/select_linerlayout_item">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/setting_logout"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:contentDescription="@string/setting_about"
+                        android:src="@mipmap/my_right_arrow" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</RelativeLayout>

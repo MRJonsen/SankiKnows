@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:background="@drawable/main_page_bg_grad">
+
+        <Button
+            android:id="@+id/sign_in_back_btn"
+            style="@style/back_button_style"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"/>
+
+
+        <TextView
+            android:id="@+id/personal_register_title"
+            style="@style/page_title_str"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="签到" />
+
+        <TextView
+            android:id="@+id/sign_in_sign_in"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dip"
+            android:gravity="center_vertical"
+            android:text="签到"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+    <!--     <com.ccy.pickuplearn.common.SignCalendar -->
+    <!--         android:id="@+id/sign_in_calendar" -->
+    <!--         android:layout_width="match_parent" -->
+    <!--         android:layout_height="320dip" -->
+    <!--         android:layout_marginLeft="20.0dip" -->
+    <!--         android:layout_marginRight="30.0dip" -->
+    <!--         android:clickable="true"></com.ccy.pickuplearn.common.SignCalendar> -->
+    <com.zc.pickuplearn.ui.view.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.zc.pickuplearn.ui.sign.widget.SignCalendar
+            android:id="@+id/sign_in_min_calendar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </com.zc.pickuplearn.ui.view.ReboundScrollView>
+</LinearLayout>

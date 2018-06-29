@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "/Users/chenbin/workspaces/as/shixue/SankiKnows/album/build/intermediates/res/merged/debug/color-v23/abc_tint_default.xml",
+        "source": "/Users/chenbin/.android/build-cache/61acc9181ce0eccd495358aa70b09ff6fc02e094/output/res/color-v23/abc_tint_default.xml"
+    },
+    {
+        "merged": "/Users/chenbin/workspaces/as/shixue/SankiKnows/album/build/intermediates/res/merged/debug/color-v23/abc_tint_edittext.xml",
+        "source": "/Users/chenbin/.android/build-cache/61acc9181ce0eccd495358aa70b09ff6fc02e094/output/res/color-v23/abc_tint_edittext.xml"
+    },
+    {
+        "merged": "/Users/chenbin/workspaces/as/shixue/SankiKnows/album/build/intermediates/res/merged/debug/color-v23/abc_tint_seek_thumb.xml",
+        "source": "/Users/chenbin/.android/build-cache/61acc9181ce0eccd495358aa70b09ff6fc02e094/output/res/color-v23/abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "/Users/chenbin/workspaces/as/shixue/SankiKnows/album/build/intermediates/res/merged/debug/color-v23/abc_tint_switch_track.xml",
+        "source": "/Users/chenbin/.android/build-cache/61acc9181ce0eccd495358aa70b09ff6fc02e094/output/res/color-v23/abc_tint_switch_track.xml"
+    },
+    {
+        "merged": "/Users/chenbin/workspaces/as/shixue/SankiKnows/album/build/intermediates/res/merged/debug/color-v23/abc_color_highlight_material.xml",
+        "source": "/Users/chenbin/.android/build-cache/61acc9181ce0eccd495358aa70b09ff6fc02e094/output/res/color-v23/abc_color_highlight_material.xml"
+    },
+    {
+        "merged": "/Users/chenbin/workspaces/as/shixue/SankiKnows/album/build/intermediates/res/merged/debug/color-v23/abc_tint_spinner.xml",
+        "source": "/Users/chenbin/.android/build-cache/61acc9181ce0eccd495358aa70b09ff6fc02e094/output/res/color-v23/abc_tint_spinner.xml"
+    },
+    {
+        "merged": "/Users/chenbin/workspaces/as/shixue/SankiKnows/album/build/intermediates/res/merged/debug/color-v23/abc_tint_btn_checkable.xml",
+        "source": "/Users/chenbin/.android/build-cache/61acc9181ce0eccd495358aa70b09ff6fc02e094/output/res/color-v23/abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "/Users/chenbin/workspaces/as/shixue/SankiKnows/album/build/intermediates/res/merged/debug/color-v23/abc_tint_switch_thumb.xml",
+        "source": "/Users/chenbin/.android/build-cache/61acc9181ce0eccd495358aa70b09ff6fc02e094/output/res/color-v23/abc_tint_switch_thumb.xml"
+    },
+    {
+        "merged": "/Users/chenbin/workspaces/as/shixue/SankiKnows/album/build/intermediates/res/merged/debug/color-v23/abc_btn_colored_borderless_text_material.xml",
+        "source": "/Users/chenbin/.android/build-cache/61acc9181ce0eccd495358aa70b09ff6fc02e094/output/res/color-v23/abc_btn_colored_borderless_text_material.xml"
+    },
+    {
+        "merged": "/Users/chenbin/workspaces/as/shixue/SankiKnows/album/build/intermediates/res/merged/debug/color-v23/design_tint_password_toggle.xml",
+        "source": "/Users/chenbin/.android/build-cache/a322eaec6bd55bd2a6ffac5ae81ce20fa334b2cf/output/res/color-v23/design_tint_password_toggle.xml"
+    }
+]

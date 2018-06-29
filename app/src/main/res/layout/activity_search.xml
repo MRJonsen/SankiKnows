@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_page_bg_grad"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/ib_back"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:src="@mipmap/back" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="50dip"
+            android:layout_weight="1"
+            android:background="@drawable/main_page_bg_grad"
+            android:backgroundTint="@color/transparent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <com.zc.pickuplearn.ui.view.ClearEditText
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="10dip"
+                android:layout_marginLeft="@dimen/default_margin_middle"
+                android:layout_marginRight="@dimen/default_margin_middle"
+                android:layout_marginTop="10dip"
+                android:layout_weight="0.7"
+                android:background="@drawable/pul_home_search_bg"
+                android:drawableLeft="@mipmap/icon_search"
+                android:drawablePadding="5dp"
+                android:drawableRight="@mipmap/delete"
+                android:gravity="center_vertical"
+                android:hint="@string/search_warning"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingLeft="15dp"
+                android:paddingRight="12dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_height_middle"
+                android:layout_gravity="bottom"
+                android:background="#44ffffff" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/ib_type"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:src="@mipmap/icon_type" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:background="@color/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
+

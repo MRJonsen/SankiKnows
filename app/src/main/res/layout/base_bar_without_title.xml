@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_bar_rl"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/colorPrimary">
+
+        <ImageButton
+            android:id="@+id/return_btn"
+            android:layout_width="@dimen/bar_default_height"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/icon_btn_back"
+            android:background="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/number_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/return_btn"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:visibility="gone"
+            />
+
+        <Button
+            android:id="@+id/pick_picture_send_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/log_reg_bt_selector"
+            android:text="发送"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+</RelativeLayout>
